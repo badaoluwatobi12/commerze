@@ -1,0 +1,36 @@
+.footer {
+    background-color:$color-secondary;
+    grid-column: 1 / full-end;
+overflow: hidden;
+
+display: flex;
+align-items: center;
+
+&__headText6{
+    width: 15rem;
+    height: 3rem;
+    border-right: 2px solid gray;
+    color: $color-dark;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+   font-family: $font-display;
+   font-weight: 100;
+   font-size: 1.5rem;
+   letter-spacing: 0.5px;
+
+   @media only screen and (max-width: $bp-small) {
+
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  
+  }
+  @media only screen and (max-width: $bp-phone) {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+}

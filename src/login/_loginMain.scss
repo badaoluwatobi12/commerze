@@ -1,0 +1,211 @@
+.main {
+    grid-column: 1 / full-end;
+    overflow: hidden;
+    background-color: #fff;
+    height:100rem;
+
+    box-shadow: 0px 7px 12px -10px gray;
+    -webkit-box-shadow: 0px 7px 12px -10px gray;
+    -moz-box-shadow: 0px 7px 12px -10px gray;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    grid-gap: 10rem;
+
+&__headText6{
+  color: $color-dark;
+  display: grid;
+  gap: 5px;
+  margin: 5rem 5rem;
+  font-family: $font-display;
+  font-weight: 800;
+  font-size: 3rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: $bp-small) {
+  font-size: 2rem;
+}
+@media only screen and (max-width: $bp-phone) {
+  line-height: 5rem;
+  
+}
+@media only screen and (max-width: $bp-phone2) {
+ font-size: 1.8rem;
+
+}
+
+
+
+
+}
+
+&__box{
+
+  display: grid;
+  height: 100%;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin: -10rem 5rem;
+  grid-gap:2rem;
+
+  @media only screen and (max-width: $bp-phone) {
+    margin: -15rem 5rem;
+    
+  }
+
+  @media only screen and (max-width: $bp-phone2) {
+    font-size: 1.8rem;
+    margin: -15rem 5rem;
+
+   }  
+
+
+&--card1{
+
+  height: 100%;
+
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+&__popform{
+
+  background-image: transparent;
+
+  display: grid;
+
+
+  margin: 5rem 3rem;
+
+
+  &__group:not(:last-child){
+       margin-bottom: 2rem;
+       display: flex;
+       gap: 2rem;
+
+  }
+  &__icon{
+    font-size: 2.5rem;
+
+    display: grid;
+    align-content: center;
+
+   }
+  &__input--1{
+     font-size: 1.5rem;
+     padding: 1rem 2rem;
+     border: solid 1px $color-secondary;
+     background-color: rgba( $color-secondary, .50);
+     width: 100%;
+
+     transition: all .3s;
+
+
+  &:focus{
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(black, .1);
+      border-bottom: 3px solid green;
+     }
+
+  &:focus:invalid{
+      border-bottom: 3px solid orange;
+  }
+  
+  &::-webkit-input-placeholder{
+      color: gray;
+
+     }
+
+}
+
+&__label{
+  font-size: 2rem;
+  font-weight: 700;
+  color:$color-primary;
+  font-family: Monospace;
+  margin-top: 2rem;
+
+
+  transition: all .3s;
+
+}
+}
+.footerShell2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 5rem;
+// font-size: 1rem;
+
+}
+
+}
+
+
+
+&--card2{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 80%;
+
+  @media only screen and (max-width: $bp-small) {
+height: 90%;
+width: 100%;
+  }
+  @media only screen and (max-width: $bp-phone) {
+    height: 100%;
+    
+  }
+  
+ 
+    &__headText7{
+      color: $color-dark;
+      display: grid;
+
+
+      gap: 5px;
+      margin-left:3rem ;
+      margin-top: 1.5rem;
+ 
+      font-family: $font-display;
+      font-weight: 700;
+      font-size: 2.3rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+        margin-left:2rem ;
+        width: 80%
+      }
+
+}
+&__headText8{
+  color: $color-dark;
+  display: grid;
+
+
+  gap: 5px;
+  margin-left:5rem ;
+
+ width: 85%;
+ letter-spacing: .5px;
+
+  font-family: $font-display;
+  font-weight: 500;
+  font-size: 1.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.6rem;
+}
+@media only screen and (max-width: $bp-small) {
+  font-size: 1.5rem;
+
+margin-left: 3.5rem;
+}
+
+
+
+}
+}
+}
+}
+
+
